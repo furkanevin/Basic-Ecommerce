@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E Ticaret</title>
+  </head>
+  <body>
+    <nav>
+      <h1>E-Ticaret</h1>
+      <input type="text" placeholder="aramak istediğiniz ürünü giriniz" />
+      <div class="buttons">
+        <button id="sepetBtn">Sepet</button>
+        <button>Kayıt Ol</button>
+        <button>Giriş Yap</button>
+      </div>
+    </nav>
+    <main>
+      <!-- Kategoriler -->
+      <div class="category-wrapper">
+        <h2>Kategriler</h2>
+        <div id="categories"></div>
+      </div>
+      <!-- ÜRÜNLER -->
+      <div class="product-wrapper">
+        <h2>Ürünler</h2>
+        <div id="products"></div>
+      </div>
+    </main>
+    <!-- SEPET MODALI -->
+    <div id="modal-wrapper">
+      <div id="modal">
+        <a id="closeModal">X</a>
+        <p class="modalToplam">
+          Toplam Fiyat <span id="toplamBilgi"></span> TL
+        </p>
+      </div>
+    </div>
+    <!-- Modal Son -->
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>

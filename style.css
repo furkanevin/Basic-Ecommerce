@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Inter:wght@100;200;300;400;500;600;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: #e9ecef;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fca311;
+  color: #ffffff;
+  top: 0;
+  position: sticky;
+  z-index: 100;
+}
+nav input {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons button {
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.buttons button:nth-child(1) {
+  background-color: #14213d;
+}
+.buttons button:nth-child(2) {
+  background-color: #d90429;
+}
+.buttons button:nth-child(3) {
+  background-color: #ffffff;
+  color: black;
+}
+/* CATEGORY */
+
+#categories {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+}
+.category-wrapper h2 {
+  padding: 10px;
+}
+.category {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.category img {
+  width: 100%;
+  border-radius: 10px;
+}
+.category p {
+  position: absolute;
+  bottom: 5px;
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* ÜRÜNLER */
+
+#products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+  padding: 40px;
+}
+.product-wrapper h2 {
+  padding: 40px;
+}
+.product {
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #ffffff;
+}
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+.product p {
+}
+
+.card-buy {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+.card-buy button {
+  background-color: #fca311;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* SEPET MODAL */
+#modal-wrapper {
+  background-color: rgba(128, 128, 128, 0.534);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#modal {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  overflow: auto;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.modalItem {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.modalItem h2 {
+  font-size: 19px;
+}
+.modalItem p {
+  font-size: 21px;
+  color: red;
+}
+#modal a {
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+#modal a:hover {
+  color: rgb(159, 0, 0);
+}
+.active {
+  display: flex !important;
+}
+
+.modalToplam {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 22px;
+  background: rgb(211, 211, 211);
+  width: 100%;
+}
+#toplamBilgi {
+  font-weight: bold;
+  color: green;
+}
