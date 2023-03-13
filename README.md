@@ -1,5 +1,5 @@
 # JS-E Commerce
-Javascript e commerce Project with basics of ecommerce 
+Javascript  Project that has basics of ecommerce 
 ## Used Technologies
 
 ```` 
