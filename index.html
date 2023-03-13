@@ -4,42 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
     <link rel="stylesheet" href="style.css" />
-    <title>E Ticaret</title>
+    <script defer src="main.js"></script>
   </head>
   <body>
-    <nav>
+    <header>
       <h1>E-Ticaret</h1>
-      <input type="text" placeholder="aramak istediğiniz ürünü giriniz" />
-      <div class="buttons">
-        <button id="sepetBtn">Sepet</button>
-        <button>Kayıt Ol</button>
+      <input type="text" placeholder="ürün ismi giriniz" />
+      <div>
+        <button id="open-btn">Sepet</button>
+        <button>KayıtOl</button>
         <button>Giriş Yap</button>
       </div>
-    </nav>
+    </header>
     <main>
-      <!-- Kategoriler -->
+      <!-- KATEGORİLER -->
       <div class="category-wrapper">
-        <h2>Kategriler</h2>
-        <div id="categories"></div>
+        <h1>Kategoriler</h1>
+        <div class="categories"></div>
       </div>
       <!-- ÜRÜNLER -->
-      <div class="product-wrapper">
-        <h2>Ürünler</h2>
-        <div id="products"></div>
-      </div>
+      <div class="products-wrapper">
+        <h1>ÜRÜNLER</h1>
+
+        <div class="products"></div>
+      <!-- ÜRÜNLER SON -->
+      <!-- MODAL > SEPET -->
+       
+      <div id="modal-wrapper">
+           <div id="modal"> 
+              <img id="close-btn" src="/images/close-icon.png">
+              <div class="modal-list"> </div>
+              <div ><span id="modal-info"></span>TL </div>
+           </div>
+       </div>
+
     </main>
-    <!-- SEPET MODALI -->
-    <div id="modal-wrapper">
-      <div id="modal">
-        <a id="closeModal">X</a>
-        <p class="modalToplam">
-          Toplam Fiyat <span id="toplamBilgi"></span> TL
-        </p>
-      </div>
-    </div>
-    <!-- Modal Son -->
-    <footer></footer>
-    <script src="main.js"></script>
   </body>
 </html>
